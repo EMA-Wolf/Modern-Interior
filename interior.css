@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#181719;
+}
+
+.main-body{
+    color: #FFFFFF;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* gap: 10rem; */
+}
+
+
+.logo > p {
+    border: 1px solid #FFFFFF;
+    font-family: 'Crimson Pro', serif;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+}
+
+.options > ul{
+list-style: none;
+display: flex;
+gap: 4rem;
+} 
+
+.options li {
+ font-size: 1.2rem;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.description{
+    margin-bottom: 2rem;
+}
+
+.description > p {
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.more{
+    display: flex;
+}
+
+.more > p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.left{
+    padding-top: 7rem;
+}
+
+.right{
+    max-width: 100%;
+}
+
+.right > img{
+width: 47rem;
+}
+
+.right > .profile {
+    background: #181719;
+    position: relative;
+    bottom: 6rem;
+    width: 25rem;
+    padding: 2rem 2rem;
+    left: 14rem;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upper{
+    display: flex;
+    gap: 1rem;
+}
+
+.upper >img{
+    width: 3.4rem;
+    border-radius: 10rem;
+}
+
+.info > h1{
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.info > p{
+    font-size: 0.7rem;
+    color: #828282;
+}
+
+.header{
+    margin-bottom: 3rem;
+}
+
+.header > p{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+}
+
+.bio{
+    font-family: 'Lora', serif;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.menu{
+    display: none;
+}
+
+
+.hidden{
+display: none;
+}
+
+
+a{
+color: #FFFFFF;
+text-decoration: none;
+padding-bottom: 12px;
+}
+
+#mobile-navbar ul > li{
+    padding-left: 3rem;
+}
+
+.under{
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+.under > a{
+    font-weight: 600;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@media(max-width: 1200px) {
+    .display{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        margin-bottom: 3rem;
+        padding-right: 18rem;
+    }   
+}
+
+@media(max-width:800px){
+    .options{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #menu1{
+      font-size: 3.5rem;
+    }
+
+    .back{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 27rem;
+    }
+
+    .back> ul > li{
+        padding-left: 1rem;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+
+#mobile-navbar {
+        position: fixed;
+        background-color: hsl(0 0% 0%/ 4);
+        width: 47rem;
+        height: 73rem;
+        z-index: 4;
+        padding-right: 2rem;
+        padding-bottom: 49rem;
+    }
+
+#mobile-navbar > ul {
+    font-family: 'Montserrat';
+        display: grid;
+        justify-content: center;
+        list-style: none;
+        font-size: 3rem;
+        line-height: 7rem;
+ 
+    }
+
+    #clear{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width:700px){
+    .header {
+        margin-bottom: 3rem;
+        width: 23rem;
+    }
+
+    .left{
+        padding-left: 0rem;
+        padding-right: 13rem;
+    }
+
+
+    .navbar{
+        gap: 34rem;
+    }
+
+    .footer{
+        padding-left: 5rem;
+    }
+}
+
+
+@media(max-width:570px){
+.left{
+    padding-left: 7.9rem;
+    padding-right: 3rem;
+}  
+.header {
+    margin-bottom: 3rem;
+    width: 24rem;
+}
+
+.footer{
+    padding-left: 7rem;
+    width: 31rem;
+}
+
+}
+
+@media (max-width:400px) {
+    .left{
+        padding-left: 7.9rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width:300px) {
+    .left{
+        padding-left: 11.9rem;
+        padding-right: 0rem;
+    }
+
+}
